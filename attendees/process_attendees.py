@@ -6,7 +6,7 @@ with open('attendees.json', 'w+') as out_file:
 
         info_count = 0
         for line in in_file:
-            if 'h3' in line:
+            if '<h3>' in line:
                 out_file.write('{"name": "' + line[4:-6] + '",')
                 out_file.write('\n')
 

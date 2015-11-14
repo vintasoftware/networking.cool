@@ -3682,5 +3682,425 @@
     "info1": "Account Executive",
     "info2": "Quixey",
     "country": "US"
+  },
+  {
+    "name": "Alejandro Alba",
+    "info1": "Tech Reporter ",
+    "info2": "New York Daily News",
+    "country": "US"
+  },
+  {
+    "name": "Allyson Smith",
+    "info1": "Event Manager",
+    "info2": "Guest of a Guest",
+    "country": "US"
+  },
+  {
+    "name": "Bill Sobel",
+    "info1": "CEO",
+    "info2": "SobelMedia",
+    "country": "US"
+  },
+  {
+    "name": "Edwin Rogers",
+    "info1": "Founder",
+    "info2": "VRVideo",
+    "country": "US"
+  },
+  {
+    "name": "Grant Engle",
+    "info1": "Writer",
+    "info2": "Heavy",
+    "country": "US"
+  },
+  {
+    "name": "J. Jennings Moss",
+    "info1": "Editor",
+    "info2": "Upstart Business Journal",
+    "country": "US"
+  },
+  {
+    "name": "Jennifer Blaha",
+    "info1": "Tech Editor",
+    "info2": "Marie Claire",
+    "country": "US"
+  },
+  {
+    "name": "Joao-Pierre Ruth",
+    "info1": "Editor",
+    "info2": "Xconomy",
+    "country": "US"
+  },
+  {
+    "name": "John Biggs",
+    "info1": "Writer",
+    "info2": "TechCrunch",
+    "country": "US"
+  },
+  {
+    "name": "Kerry Flynn",
+    "info1": "Tech Reporter ",
+    "info2": "International Business Times",
+    "country": "US"
+  },
+  {
+    "name": "Kevin Raposo",
+    "info1": "Tech Writer",
+    "info2": "KnowTechie",
+    "country": "US"
+  },
+  {
+    "name": "Linda Lacina",
+    "info1": "Director of Special Projects",
+    "info2": "Entrepreneur Media",
+    "country": "US"
+  },
+  {
+    "name": "Mae Anderson",
+    "info1": "Tech Reporter ",
+    "info2": "Associated Press",
+    "country": "US"
+  },
+  {
+    "name": "Michael Del Castillo",
+    "info1": "Technology and Innovation Reporter",
+    "info2": "American City Business Journals",
+    "country": "US"
+  },
+  {
+    "name": "Rachel Crane",
+    "info1": "Digital Correspondent",
+    "info2": "CNN",
+    "country": "US"
+  },
+  {
+    "name": "Robb Todd",
+    "info1": "Freelancer",
+    "info2": "Fast Company",
+    "country": "US"
+  },
+  {
+    "name": "Steven Tweedie",
+    "info1": "Tech Editor",
+    "info2": "Business Insider",
+    "country": "US"
+  },
+  {
+    "name": "Uptin Saiidi",
+    "info1": "Journalist",
+    "info2": "CNBC",
+    "country": "US"
+  },
+  {
+    "name": "Yuliya Chernova",
+    "info1": "Reporter",
+    "info2": "Wall Street Journal",
+    "country": "US"
+  },
+  {
+    "name": "Adam Carver",
+    "info1": "Principal",
+    "info2": "MESA Ventures",
+    "country": "US"
+  },
+  {
+    "name": "Alden Mahabir",
+    "info1": "Manager",
+    "info2": "Verizon Ventures",
+    "country": "US"
+  },
+  {
+    "name": "Alex Viñas",
+    "info1": "Investor",
+    "info2": "IVISCO desarrollos",
+    "country": "Spain"
+  },
+  {
+    "name": "Bert Navarrete",
+    "info1": "Founder &amp; Managing Partner",
+    "info2": "Beta Bridge Capital",
+    "country": "US"
+  },
+  {
+    "name": "Bilal Farrukh",
+    "info1": "Country Head",
+    "info2": "LINE Corp",
+    "country": "Pakistan"
+  },
+  {
+    "name": "Bronson Lingamfelter",
+    "info1": "Venture Partner",
+    "info2": "Interplay Ventures",
+    "country": "US"
+  },
+  {
+    "name": "Chris Shipman",
+    "info1": "Partner",
+    "info2": "Catalyst Investors",
+    "country": "US"
+  },
+  {
+    "name": "David S Rose",
+    "info1": "Managing Partner",
+    "info2": "Rose Tech Ventures",
+    "country": "US"
+  },
+  {
+    "name": "Deepen Parikh",
+    "info1": "Partner",
+    "info2": "Interplay Ventures",
+    "country": "US"
+  },
+  {
+    "name": "Devin Thomas",
+    "info1": "Associate",
+    "info2": "New Ground Ventures",
+    "country": "US"
+  },
+  {
+    "name": "Eddy De Heij",
+    "info1": "Angel Investor",
+    "info2": "ZO Media Group",
+    "country": "Spain"
+  },
+  {
+    "name": "Edward Chyau",
+    "info1": "Managing Partner",
+    "info2": "Mesh Ventures",
+    "country": "Taiwan"
+  },
+  {
+    "name": "Elan Zivotofsky",
+    "info1": "General Partner",
+    "info2": "OurCrowd",
+    "country": "Israel"
+  },
+  {
+    "name": "Eric Hoffer",
+    "info1": "Diligence Member",
+    "info2": "Sound Board Angel Fund",
+    "country": "US"
+  },
+  {
+    "name": "Eric Olson",
+    "info1": "Technology Strategy Manager",
+    "info2": "Nordstrom",
+    "country": "US"
+  },
+  {
+    "name": "Gokce Gizer",
+    "info1": "Angel Investor",
+    "info2": "onkaro",
+    "country": "US"
+  },
+  {
+    "name": "Graham Brown",
+    "info1": "Investor",
+    "info2": "Lerer Hippeau Ventures",
+    "country": "US"
+  },
+  {
+    "name": "Ilan Regenbaum",
+    "info1": "Venture Capital",
+    "info2": "Elevator Fund",
+    "country": "Israel"
+  },
+  {
+    "name": "James Smits",
+    "info1": "Founding Partner",
+    "info2": "Tigerlabs",
+    "country": "US"
+  },
+  {
+    "name": "James Wise",
+    "info1": "Venture Investor",
+    "info2": "Balderton Capital",
+    "country": "UK"
+  },
+  {
+    "name": "Jeff Samuels",
+    "info1": "LP",
+    "info2": "Sound Board Angel Fund",
+    "country": "US"
+  },
+  {
+    "name": "Jonne De Leeuw",
+    "info1": "VP",
+    "info2": "HPE Growth Capital",
+    "country": "Netherlands"
+  },
+  {
+    "name": "Joshua B Siegel",
+    "info1": "Partner",
+    "info2": "Rubicon Venture Capital",
+    "country": "US"
+  },
+  {
+    "name": "Kamran Barelli",
+    "info1": "Angel Investor",
+    "info2": "Barelli Brothers",
+    "country": "US"
+  },
+  {
+    "name": "Kiyan Barelli",
+    "info1": "Partner",
+    "info2": "Swiss Commerce",
+    "country": "US"
+  },
+  {
+    "name": "Lisa Wu",
+    "info1": "Venture Capital",
+    "info2": "Norwest Venture Partners",
+    "country": "US"
+  },
+  {
+    "name": "Martha Xiang",
+    "info1": "Associate",
+    "info2": "North Bridge Growth Equity",
+    "country": "US"
+  },
+  {
+    "name": "Marvin Liao",
+    "info1": "Partner",
+    "info2": "500 Startups",
+    "country": "US"
+  },
+  {
+    "name": "Michael Ozechov",
+    "info1": "Partner",
+    "info2": "Cornerstone Venture Partners",
+    "country": "US"
+  },
+  {
+    "name": "Mitchell Kleinhandler",
+    "info1": "Venture Partner",
+    "info2": "Scout ventures",
+    "country": "US"
+  },
+  {
+    "name": "Nadav Gan",
+    "info1": "Director of Corporate Business Development",
+    "info2": "Univision Communications",
+    "country": "US"
+  },
+  {
+    "name": "Peter Boyce",
+    "info1": "Investor",
+    "info2": "General Catalyst Partners",
+    "country": "US"
+  },
+  {
+    "name": "Richard Marsh",
+    "info1": "Partner",
+    "info2": "Draper Esprit",
+    "country": "UK"
+  },
+  {
+    "name": "Rohit Dave",
+    "info1": "Corporate Development &amp; Strategy manager",
+    "info2": "Samsung",
+    "country": "US"
+  },
+  {
+    "name": "Ron Guida",
+    "info1": "Angel Investor",
+    "info2": "Rackspace",
+    "country": "US"
+  },
+  {
+    "name": "Ryan Armbrust",
+    "info1": "Director",
+    "info2": "ff Venture Capital",
+    "country": "US"
+  },
+  {
+    "name": "Ryley Reynolds",
+    "info1": "Analyst",
+    "info2": "Insight Venture Partners",
+    "country": "US"
+  },
+  {
+    "name": "Sam Lam",
+    "info1": "Managing Partner",
+    "info2": "Mesh Ventures",
+    "country": "Taiwan"
+  },
+  {
+    "name": "Samantha Lynch",
+    "info1": "Principal",
+    "info2": "BBG / AOL",
+    "country": "US"
+  },
+  {
+    "name": "Samina Rind",
+    "info1": "Partner",
+    "info2": "Satori Capital Partners, LLC",
+    "country": "US"
+  },
+  {
+    "name": "Satoru Miura",
+    "info1": "Principal",
+    "info2": "Docomo Innovations",
+    "country": "US"
+  },
+  {
+    "name": "Sol Zlotchenko",
+    "info1": "Managing Partner",
+    "info2": "Select Venture Partners",
+    "country": "US"
+  },
+  {
+    "name": "Steven Greenberg",
+    "info1": "Product Manager",
+    "info2": "ff Venture Capital",
+    "country": "US"
+  },
+  {
+    "name": "Sumeet Shah",
+    "info1": "Senior Associate",
+    "info2": "Brand Foundry Ventures",
+    "country": "US"
+  },
+  {
+    "name": "Tim Devane",
+    "info1": "Principal",
+    "info2": "NextView Ventures",
+    "country": "US"
+  },
+  {
+    "name": "Tony Peccatiello",
+    "info1": "Principal",
+    "info2": "Social Starts",
+    "country": "US"
+  },
+  {
+    "name": "Tony Quinones",
+    "info1": "Principal",
+    "info2": "Seed Equity Capital Partners",
+    "country": "US"
+  },
+  {
+    "name": "Travis Ing",
+    "info1": "Associate",
+    "info2": "Hearst Ventures",
+    "country": "US"
+  },
+  {
+    "name": "Valerie Low",
+    "info1": "Venture Analyst",
+    "info2": "SeedInvest",
+    "country": "US"
+  },
+  {
+    "name": "Vlad Lukashevsky",
+    "info1": "Investor",
+    "info2": "Tenfore Holdings",
+    "country": "US"
+  },
+  {
+    "name": "Will Szczerbiak",
+    "info1": "Senior Associate",
+    "info2": "Greycroft Partners",
+    "country": "US"
   }
 ]
