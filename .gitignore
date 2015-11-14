@@ -1,0 +1,13 @@
+*.pyc
+.DS_Store
+/venv/
+.sass-cache
+/db.sqlite3
+/.coverage
+/coverage_html/
+/.env
+/env
+/components/
+/staticfiles/
+/media/
+*.css.map
