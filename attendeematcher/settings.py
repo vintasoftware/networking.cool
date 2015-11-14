@@ -52,7 +52,7 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.security.SecurityMiddleware',
 )
 
-ROOT_URLCONF = 'eventmatcher.urls'
+ROOT_URLCONF = 'attendeematcher.urls'
 
 TEMPLATES = [
     {
@@ -70,7 +70,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'eventmatcher.wsgi.application'
+WSGI_APPLICATION = 'attendeematcher.wsgi.application'
 
 
 # Database
