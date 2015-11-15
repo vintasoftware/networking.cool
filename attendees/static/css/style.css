@@ -19,11 +19,14 @@ ul {
     margin-right: 0.6em; }
   .main-content h5 {
     color: #777; }
-  .main-content .label ul {
-    margin: 20px 0; }
-    .main-content .label ul li {
-      display: inline-block;
-      margin: 0 6px; }
+  .main-content .label {
+    white-space: normal; }
+    .main-content .label ul {
+      margin: 20px 0; }
+      .main-content .label ul li {
+        display: inline-block;
+        margin: 0 4px;
+        margin-bottom: 20px; }
   .main-content .common-labels ul li {
     font-size: 28px; }
   .main-content .random-labels ul li {
@@ -44,10 +47,25 @@ ul {
 
 .result-box {
   margin-top: 3em; }
-  .result-box .result-text h5 {
+  .result-box .button-todoist {
+    display: inline-block;
+    padding: 10px 16px;
+    color: white;
+    background-color: #db4c3f;
+    border-radius: 3px;
+    -webkit-transition: background-color .2s ease-in;
+    transition: background-color .2s ease-in;
+    cursor: pointer;
+    font-size: 15px; }
+    .result-box .button-todoist:hover {
+      text-decoration: none;
+      background-color: #c33224; }
+  .result-box .result-text {
+    display: inline-block;
+    width: 100%;
     border-bottom: solid 2px;
-    padding-bottom: 10px;
-    margin-bottom: 25px; }
+    padding-bottom: 12px;
+    margin-bottom: 22px; }
   .result-box ul {
     display: inline-block;
     padding-left: 0;
@@ -58,6 +76,20 @@ ul {
       float: left;
       margin-right: 3px;
       height: 26px; }
+  @media (max-width: 545px) {
+    .result-box .media-left {
+      width: 100%;
+      display: inline-block;
+      padding: 0; }
+    .result-box img {
+      margin: auto;
+      margin-bottom: 25px; }
+    .result-box .button-todoist {
+      width: 100%;
+      text-align: center;
+      margin: 0.5em 0; }
+    .result-box .linkedin {
+      margin-top: -15px; } }
 
 .result-box .media-object {
   display: block;
