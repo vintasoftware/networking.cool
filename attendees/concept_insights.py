@@ -42,7 +42,7 @@ def fetch_concepts(attendee, html=''):
 
         concepts_set.update([label])
 
-        if len(concepts_set) >= 20:
+        if len(concepts_set) >= 40:
             break
 
 
