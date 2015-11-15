@@ -37,6 +37,7 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'djangobower',
 
     'attendees',
 )
@@ -72,6 +73,20 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'attendeematcher.wsgi.application'
 
+STATICFILES_FINDERS = (
+    'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+    'django.contrib.staticfiles.finders.FileSystemFinder',
+    'djangobower.finders.BowerFinder',
+)
+
+# Bower
+
+BOWER_INSTALLED_APPS = [
+    'font-awesome#4.2.0',
+    'bootstrap#3.3.4',
+]
+
+BOWER_COMPONENTS_ROOT = os.path.join(BASE_DIR, 'components')
 
 # Database
 # https://docs.djangoproject.com/en/1.8/ref/settings/#databases

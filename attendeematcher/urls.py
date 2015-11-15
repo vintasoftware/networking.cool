@@ -16,6 +16,9 @@ Including another URLconf
 from django.conf.urls import include, url
 from django.contrib import admin
 
+from attendees.views import (AttendeesView)
+
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
+    url(r'^$', AttendeesView.as_view(), name='event-matcher'),
 ]

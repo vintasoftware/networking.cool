@@ -1,0 +1,46 @@
+.main-content {
+  padding: 6em 0;
+  background-color: #325c80;
+  text-align: center; }
+  .main-content h1, .main-content h4 {
+    color: #fff; }
+    .main-content h1 span, .main-content h4 span {
+      color: #ff9800; }
+  .main-content h3 {
+    font-size: 30px;
+    display: inline;
+    margin-right: 0.6em; }
+  .main-content h5 {
+    color: #fff; }
+  .main-content .label {
+    margin: 0 10px; }
+    .main-content .label ul {
+      list-style: none;
+      margin: 20px 0; }
+      .main-content .label ul li {
+        display: inline-block;
+        margin: 0 6px; }
+  .main-content .commom-labels ul li {
+    font-size: 28px; }
+  .main-content .random-labels ul li {
+    font-size: 22px; }
+
+.tags-form {
+  margin-top: 3em; }
+  .tags-form input {
+    background-color: #fff !important;
+    padding: 1.5em 1em !important;
+    font-size: 28px !important; }
+  .tags-form textarea:focus, .tags-form textarea.form-control:focus, .tags-form input.form-control:focus, .tags-form input[type=text]:focus, .tags-form input[type=password]:focus, .tags-form input[type=email]:focus, .tags-form input[type=number]:focus, .tags-form [type=text].form-control:focus, .tags-form [type=password].form-control:focus, .tags-form [type=email].form-control:focus, .tags-form [type=tel].form-control:focus, .tags-form [contenteditable].form-control:focus {
+    -webkit-box-shadow: inset 0 -6px 0 #ff9800;
+    box-shadow: inset 0 -6px 0 #ff9800; }
+
+footer {
+  margin-top: 3em; }
+  footer ul li {
+    display: inline-block;
+    margin-right: 1em; }
+  footer ul .pull-right {
+    margin-right: 0; }
+
+/*# sourceMappingURL=style.css.map */
