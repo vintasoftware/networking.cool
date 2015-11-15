@@ -26,6 +26,10 @@ class AttendeesView(generic.TemplateView):
         return data
 
 
+def filter_query(tags):
+    return Attendee.objects.filter(concepts__label__in=tags).distinct()
+
+
 class SendToTodoistAjaxView(generic.TemplateView):
 
     def post(self, request, **kwargs):
@@ -33,7 +37,7 @@ class SendToTodoistAjaxView(generic.TemplateView):
         password = request.POST.get('password', '')
         tags_str = self.request.GET.get('tags', '')
         tags = tags_str.split(',')
-        attendees = Attendee.objects.filter(concepts__label__in=tags).distinct()
+        attendees = filter_query(tags)
         export_to_todoist(username, password, 'TheNextWeb-networking', attendees[20])
         return HttpResponse()
 
@@ -47,6 +51,6 @@ class AttendeesAjaxView(generic.TemplateView):
         if tags_str:
             tags = tags_str.split(',')
             data['tags'] = ','.join(tags)
-            data['results'] = list(Attendee.objects.filter(concepts__label__in=tags).distinct())
+            data['results'] = list(filter_query(tags))
             data['results_len'] = len(data['results'])
         return data
