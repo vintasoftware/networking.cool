@@ -1,8 +1,8 @@
 from django.db import models
+from django_random_queryset import RandomManager
 
 
 class Attendee(models.Model):
-
     name = models.CharField(max_length=255)
     picture = models.TextField(blank=True)
     company = models.CharField(max_length=255, blank=True)
@@ -15,10 +15,12 @@ class Attendee(models.Model):
 
 
 class Concept(models.Model):
-    attendee = models.ForeignKey(Attendee)
+    attendee = models.ForeignKey(Attendee, related_name='concepts')
 
     label = models.CharField(max_length=255)
     score = models.DecimalField(max_digits=10, decimal_places=9)
+
+    objects = RandomManager()
 
     def __unicode__(self):
         return self.attendee.name + ' - ' + self.label + ' - ' + str(self.score)
