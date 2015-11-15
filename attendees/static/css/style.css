@@ -104,9 +104,11 @@ ul {
   .modal-dialog .form-modal input {
     width: 100%;
     padding: 22px 20px; }
-    .modal-dialog .form-modal input:focus {
-      -webkit-box-shadow: none !important;
-      box-shadow: none !important; }
+  .modal-dialog .form-modal input:active,
+  .modal-dialog .form-modal input:focus,
+  .modal-dialog .form-modal input.active {
+    background-image: none;
+    outline: 0; }
 
 .result-box .media-object {
   display: block;
