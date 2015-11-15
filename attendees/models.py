@@ -1,7 +1,7 @@
 from django.db import models
 
 
-class Atendee(models.Model):
+class Attendee(models.Model):
 
     name = models.CharField(max_length=255)
     description = models.TextField(blank=True)
@@ -13,10 +13,10 @@ class Atendee(models.Model):
 
 
 class Concept(models.Model):
-    atendee = models.ForeignKey(Atendee)
+    attendee = models.ForeignKey(Attendee)
 
     label = models.CharField(max_length=255)
     score = models.DecimalField(max_digits=10, decimal_places=9)
 
     def __unicode__(self):
-        return self.atendee.name + ' - ' + self.label + ' - ' + str(self.score)
+        return self.attendee.name + ' - ' + self.label + ' - ' + str(self.score)

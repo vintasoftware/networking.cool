@@ -22,7 +22,7 @@ class ConceptInsightsClientAdapter(JSONAdapterMixin, TapiocaAdapter):
         params['auth'] = HTTPBasicAuth(
             api_params.get('user'), api_params.get('password'))
 
-        params['headers']['Content-Type'] = 'text/plain'
+        params['headers']['Content-Type'] = 'text/html'
         return params
 
     def get_iterator_list(self, response_data):
