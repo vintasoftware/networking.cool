@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from attendees.models import Atendee, Concept
+from attendees.models import Attendee, Concept
 
 
 class AttendeeAdmin(admin.ModelAdmin):
@@ -8,10 +8,10 @@ class AttendeeAdmin(admin.ModelAdmin):
 
 
 class ConceptAdmin(admin.ModelAdmin):
-    list_display = ('label', 'atendee', 'score',)
-    list_filter = ('label', 'atendee',)
+    list_display = ('label', 'attendee', 'score',)
+    list_filter = ('label', 'attendee',)
 
 
 
-admin.site.register(Atendee, AttendeeAdmin)
+admin.site.register(Attendee, AttendeeAdmin)
 admin.site.register(Concept, ConceptAdmin)
