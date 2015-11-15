@@ -21,19 +21,13 @@ class AttendeesView(generic.TemplateView):
             label__in=['', 'LinkedIn']
         ).values('label').annotate(count=Count('label')).order_by('-count')[:7]
         data['random_labels'] = Concept.objects.values('label').random(7)
-        all_labels = Concept.objects.values_list('label', flat=True).distinct()
-        data['all_labels_select2_data'] = json.dumps([{
-            'id': l,
-            'text': l
-        } for l in all_labels])
-        Concept.objects.values('label').annotate(count=Count('label'))
         return data
 
 
 def filter_query(tags):
     return Attendee.objects.filter(
-        reduce(operator.and_, (Q(concepts__label=t) for t in tags))
-    ).distinct()
+        concepts__label__in=tags).annotate(
+        count=Count('concepts')).filter(count=len(tags))
 
 
 class SendToTodoistAjaxView(generic.TemplateView):
@@ -63,7 +57,23 @@ class AttendeesAjaxView(generic.TemplateView):
         tags_str = self.request.GET.get('tags', '')
         if tags_str:
             tags = tags_str.split(',')
+
+            attendees_full = list(filter_query(tags))
+            attendees = attendees_full
+            if len(attendees) > 30:
+                attendees = attendees[:30]
+
             data['tags'] = ', '.join(tags)
-            data['results'] = list(filter_query(tags))
-            data['results_len'] = len(data['results'])
+            data['results'] = attendees
+            data['results_len'] = len(attendees_full)
         return data
+
+class ConceptsFilterEndpoint(generic.TemplateView):
+
+    def get(self, request, *args, **kwargs):
+        p = request.GET.get('term')
+        concepts = Concept.objects.filter(label__contains=p).values_list('label', flat=True).distinct()[:10]
+        return HttpResponse(json.dumps([{
+            'id': l,
+            'text': l
+        } for l in concepts]))
