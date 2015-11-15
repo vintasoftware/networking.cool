@@ -66,26 +66,5 @@
       }
       return false;
     });
-
-    $("#todoist").submit(function(event){
-      event.preventDefault();
-      var tags = $("#focusedInput").val();
-      if (!tags){
-        tags = [];
-      }
-      tags = tags.join(',');
-
-      $.ajax({
-        type: 'POST',
-        url: "{% url 'send-to-todoist-ajax' %}",
-        data: {
-          'username': $("#todoist-username").val(),
-          'password': $("#todoist-password").val(),
-          'tags': tags,
-        },
-        dataType: 'html'
-      });
-      return false;
-    });
   </script>
 {% endblock %}
