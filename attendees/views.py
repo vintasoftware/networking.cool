@@ -1,7 +1,9 @@
 from django.views import generic
+from django.http import HttpResponse
 from django.db.models import Count
 
 from attendees.models import Concept, Attendee
+from attendees.todoist import export_to_todoist
 
 import json
 
@@ -19,6 +21,18 @@ class AttendeesView(generic.TemplateView):
             Concept.objects.values_list('label', flat=True).distinct()))
         Concept.objects.values('label').annotate(count=Count('label'))
         return data
+
+
+class SendToTodoistAjaxView(generic.TemplateView):
+
+    def post(self, request, **kwargs):
+        username = request.POST.get('username', '')
+        password = request.POST.get('password', '')
+        tags_str = self.request.GET.get('tags', '')
+        tags = tags_str.split(',')
+        attendees = Attendee.objects.filter(concepts__label__in=tags).distinct()
+        export_to_todoist(username, password, 'TheNextWeb-networking', attendees[20])
+        return HttpResponse()
 
 
 class AttendeesAjaxView(generic.TemplateView):
