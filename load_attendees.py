@@ -17,6 +17,5 @@ for attendee in attendees:
 
         print 'created: ' + attendee_instance.name
 
-        if new:
-            fetch_concepts(attendee_instance, html=attendee['html'])
+        fetch_concepts(attendee_instance, html=attendee['html'])
 
