@@ -93,10 +93,11 @@ ul {
 
 .result-box .media-object {
   display: block;
-  max-width: 200px; }
+  width: 200px; }
 .result-box .media, .result-box .media-body {
   margin-top: 0;
-  margin-bottom: 3em; }
+  margin-bottom: 3em;
+  height: 310px; }
 .result-box .media-left {
   padding-right: 2em; }
 .result-box span {

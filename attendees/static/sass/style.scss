@@ -154,12 +154,13 @@ ul {
 .result-box {
   .media-object {
     display: block;
-    max-width: 200px;
+    width: 200px;
   }
 
   .media, .media-body {
     margin-top: 0;
     margin-bottom: 3em;
+    height: 310px;
   }
 
   .media-left {
