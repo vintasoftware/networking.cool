@@ -23,6 +23,14 @@ ul {
     }
   }
 
+  @media #{$screen-mobile} {
+    h1 {
+      word-break: break-all;
+      width: 320px;
+      margin: auto;
+    }
+  }
+
   h3 {
     font-size: 30px;
     display: inline;
@@ -35,6 +43,8 @@ ul {
 
   .label {
     white-space: normal;
+    -webkit-box-shadow: none;
+    box-shadow: none;
 
     ul {
       margin: 20px 0;

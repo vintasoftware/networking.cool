@@ -13,6 +13,11 @@ ul {
     color: #777; }
     .main-content h1 span, .main-content h4 span {
       color: #F42; }
+  @media (max-width: 545px) {
+    .main-content h1 {
+      word-break: break-all;
+      width: 320px;
+      margin: auto; } }
   .main-content h3 {
     font-size: 30px;
     display: inline;
@@ -20,7 +25,9 @@ ul {
   .main-content h5 {
     color: #777; }
   .main-content .label {
-    white-space: normal; }
+    white-space: normal;
+    -webkit-box-shadow: none;
+    box-shadow: none; }
     .main-content .label ul {
       margin: 20px 0; }
       .main-content .label ul li {
