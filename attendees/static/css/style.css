@@ -31,14 +31,14 @@ ul {
 
 .tags-form {
   margin-top: 3em; }
-  .tags-form input {
+  .tags-form input, .tags-form select {
     background-color: #fff !important;
     padding: 1.5em 1em !important;
     font-size: 28px !important;
     box-shadow: none !important; }
-  .tags-form textarea, .tags-form textarea.form-control, .tags-form input.form-control, .tags-form input[type=text], .tags-form input[type=password], .tags-form input[type=email], .tags-form input[type=number], .tags-form [type=text].form-control, .tags-form [type=password].form-control, .tags-form [type=email].form-control, .tags-form [type=tel].form-control, .tags-form [contenteditable].form-control {
+  .tags-form select, .tags-form textarea, .tags-form textarea.form-control, .tags-form input.form-control, .tags-form input[type=text], .tags-form input[type=password], .tags-form input[type=email], .tags-form input[type=number], .tags-form [type=text].form-control, .tags-form [type=password].form-control, .tags-form [type=email].form-control, .tags-form [type=tel].form-control, .tags-form [contenteditable].form-control {
     border-bottom: 8px solid #f42; }
-  .tags-form textarea:focus, .tags-form textarea.form-control:focus, .tags-form input.form-control:focus, .tags-form input[type=text]:focus, .tags-form input[type=password]:focus, .tags-form input[type=email]:focus, .tags-form input[type=number]:focus, .tags-form [type=text].form-control:focus, .tags-form [type=password].form-control:focus, .tags-form [type=email].form-control:focus, .tags-form [type=tel].form-control:focus, .tags-form [contenteditable].form-control:focus {
+  .tags-form select, .tags-form textarea:focus, .tags-form textarea.form-control:focus, .tags-form input.form-control:focus, .tags-form input[type=text]:focus, .tags-form input[type=password]:focus, .tags-form input[type=email]:focus, .tags-form input[type=number]:focus, .tags-form [type=text].form-control:focus, .tags-form [type=password].form-control:focus, .tags-form [type=email].form-control:focus, .tags-form [type=tel].form-control:focus, .tags-form [contenteditable].form-control:focus {
     -webkit-box-shadow: none;
     box-shadow: none; }
 

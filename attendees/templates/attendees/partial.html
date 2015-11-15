@@ -1,1 +1,21 @@
-{{results}}
+<div class="col-md-12">
+  <div class="result-text">
+    <h5>{{results_len}} results with: <b>{{tags}}</b></h5>
+  </div>
+  {% for attendee in results %}
+    <div class="media col-md-6">
+      <div class="media-left">
+        <img class="media-object" data-src="holder.js/64x64" src="{{attendee.picture}}">
+      </div>
+      <div class="media-body">
+        <h4 class="media-heading">{{attendee.name}} <b>({{attendee.company}})</b></h4>
+        <ul>
+          {% for concept in attendee.concepts.all %}
+            <li><span>{{ concept.label }}</span></li>
+          {% endfor %}
+        </ul>
+        <a href="{{attendee.linkedin_profile}}" class="btn btn-primary linkedin">Go to Linkedin</a>
+      </div>
+    </div>
+  {% endfor %}
+</div>
