@@ -1,19 +1,23 @@
+a {
+  color: #F42;
+  text-decoration: none; }
+
 .main-content {
   padding: 6em 0;
-  background-color: #325c80;
+  background-color: #ECECEC;
   text-align: center; }
   .main-content h1, .main-content h4 {
-    color: #fff; }
+    color: #777; }
     .main-content h1 span, .main-content h4 span {
-      color: #ff9800; }
+      color: #F42; }
   .main-content h3 {
     font-size: 30px;
     display: inline;
     margin-right: 0.6em; }
   .main-content h5 {
-    color: #fff; }
+    color: #777; }
   .main-content .label {
-    margin: 0 10px; }
+    margin: 0 5px; }
     .main-content .label ul {
       list-style: none;
       margin: 20px 0; }
@@ -30,10 +34,13 @@
   .tags-form input {
     background-color: #fff !important;
     padding: 1.5em 1em !important;
-    font-size: 28px !important; }
+    font-size: 28px !important;
+    box-shadow: none !important; }
+  .tags-form textarea, .tags-form textarea.form-control, .tags-form input.form-control, .tags-form input[type=text], .tags-form input[type=password], .tags-form input[type=email], .tags-form input[type=number], .tags-form [type=text].form-control, .tags-form [type=password].form-control, .tags-form [type=email].form-control, .tags-form [type=tel].form-control, .tags-form [contenteditable].form-control {
+    border-bottom: 8px solid #f42; }
   .tags-form textarea:focus, .tags-form textarea.form-control:focus, .tags-form input.form-control:focus, .tags-form input[type=text]:focus, .tags-form input[type=password]:focus, .tags-form input[type=email]:focus, .tags-form input[type=number]:focus, .tags-form [type=text].form-control:focus, .tags-form [type=password].form-control:focus, .tags-form [type=email].form-control:focus, .tags-form [type=tel].form-control:focus, .tags-form [contenteditable].form-control:focus {
-    -webkit-box-shadow: inset 0 -6px 0 #ff9800;
-    box-shadow: inset 0 -6px 0 #ff9800; }
+    -webkit-box-shadow: none;
+    box-shadow: none; }
 
 footer {
   margin-top: 3em; }
