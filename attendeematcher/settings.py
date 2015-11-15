@@ -79,6 +79,8 @@ STATICFILES_FINDERS = (
     'djangobower.finders.BowerFinder',
 )
 
+STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
+
 # Bower
 
 BOWER_INSTALLED_APPS = [
@@ -117,6 +119,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.8/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = 'static'
 
 CONCEPT_INSIGHTS_USER = '252f3e20-0ae7-42c3-a3ae-ee21dc216db6'
 CONCEPT_INSIGHTS_PASSWORD = '5dJHn3GjNxgl'
