@@ -1,7 +1,7 @@
 {% extends 'attendees/base.html' %}
 {% load staticfiles %}
 
-{% block page_title %}Home{% endblock %}
+{% block page_title %}NetworkingCool{% endblock %}
 
 {% block content %}
   <div class="main-content">
@@ -31,13 +31,13 @@
       </div>
     </div>
   </div>
-  <div class="result-box container">
-  </div>
+  <div class="result-box container"></div>
 {% endblock %}
 
 {% block script %}
   <script>
     $("#focusedInput").select2({
+      placeholder: "You want to meet people related to...",
       data: {{all_labels_select2_data|safe}}
     }).on('change', function (e) {
       var tags = $(this).val();
