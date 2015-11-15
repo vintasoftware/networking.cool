@@ -38,7 +38,26 @@
   <script>
     $("#focusedInput").select2({
       placeholder: "You want to meet people related to...",
-      data: {{all_labels_select2_data|safe}}
+      ajax: {
+        url: "{% url 'concepts-ajax' %}",
+        dataType: 'json',
+        delay: 250,
+        data: function (params) {
+          return params;
+        },
+        processResults: function (data, params) {
+          // parse the results into the format expected by Select2
+          // since we are using custom formatting functions we do not need to
+          // alter the remote JSON data, except to indicate that infinite
+          // scrolling can be used
+          // params.page = params.page || 1;
+
+          return {
+            results: data
+          };
+    },
+      }
+      // data: {{all_labels_select2_data|safe}}
     }).on('change', function (e) {
       var tags = $(this).val();
       $.ajax({

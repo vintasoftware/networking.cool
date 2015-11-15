@@ -73,3 +73,13 @@ class AttendeesAjaxView(generic.TemplateView):
             data['results'] = attendees
             data['results_len'] = len(attendees_full)
         return data
+
+class ConceptsFilterEndpoint(generic.TemplateView):
+
+    def get(self, request, *args, **kwargs):
+        p = request.GET.get('term')
+        concepts = Concept.objects.filter(label__contains=p).values_list('label', flat=True).distinct()[:10]
+        return HttpResponse(json.dumps([{
+            'id': l,
+            'text': l
+        } for l in concepts]))
