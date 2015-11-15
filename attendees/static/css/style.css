@@ -93,6 +93,12 @@ ul {
     .result-box .linkedin {
       margin-top: -15px; } }
 
+.modal-dialog h4 {
+  text-align: center;
+  margin: 0; }
+.modal-dialog img {
+  width: 160px; }
+
 .result-box .media-object {
   display: block;
   width: 200px; }
