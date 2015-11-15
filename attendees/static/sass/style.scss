@@ -49,6 +49,10 @@ ul {
     ul {
       margin: 20px 0;
 
+      @media #{$screen-mobile} {
+        padding-left: 0;
+      }
+
       li {
         display: inline-block;
         margin: 0 4px;

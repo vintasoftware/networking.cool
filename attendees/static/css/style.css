@@ -30,6 +30,9 @@ ul {
     box-shadow: none; }
     .main-content .label ul {
       margin: 20px 0; }
+      @media (max-width: 545px) {
+        .main-content .label ul {
+          padding-left: 0; } }
       .main-content .label ul li {
         display: inline-block;
         margin: 0 4px;
