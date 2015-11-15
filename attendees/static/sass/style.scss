@@ -1,3 +1,6 @@
+//Style
+$screen-mobile: "(max-width: 545px)";
+
 a {
     color: #F42;
     text-decoration: none;
@@ -121,6 +124,28 @@ ul {
       float: left;
       margin-right: 3px;
       height: 26px;
+    }
+  }
+  @media #{$screen-mobile} {
+    .media-left {
+      width: 100%;
+      display: inline-block;
+      padding: 0;
+    }
+
+    img {
+      margin: auto;
+      margin-bottom: 25px;
+    }
+
+    .button-todoist {
+      width: 100%;
+      text-align: center;
+      margin: 0.5em 0;
+    }
+
+    .linkedin {
+      margin-top: -15px;
     }
   }
 }
