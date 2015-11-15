@@ -16,7 +16,6 @@ def export_to_todoist(username, password, project_name, attendees):
     else:
         project = user.add_project(project_name)
 
-
     for attendee in attendees:
         task = project.add_task(attendee.name)
         task.add_note(attendee.linkedin_profile)

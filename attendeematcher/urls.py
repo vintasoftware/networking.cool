@@ -16,10 +16,11 @@ Including another URLconf
 from django.conf.urls import include, url
 from django.contrib import admin
 
-from attendees.views import AttendeesView, AttendeesAjaxView
+from attendees.views import AttendeesView, AttendeesAjaxView, SendToTodoistAjaxView
 
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
     url(r'^ajax/$', AttendeesAjaxView.as_view(), name='attendees-ajax'),
+    url(r'^send-to-todoist/$', SendToTodoistAjaxView.as_view(), name='send-to-todoist-ajax'),
     url(r'^$', AttendeesView.as_view(), name='event-matcher'),
 ]
