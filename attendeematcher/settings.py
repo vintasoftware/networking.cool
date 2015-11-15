@@ -53,7 +53,7 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.security.SecurityMiddleware',
 )
 
-ROOT_URLCONF = 'eventmatcher.urls'
+ROOT_URLCONF = 'attendeematcher.urls'
 
 TEMPLATES = [
     {
@@ -71,7 +71,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'eventmatcher.wsgi.application'
+WSGI_APPLICATION = 'attendeematcher.wsgi.application'
 
 STATICFILES_FINDERS = (
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
@@ -117,3 +117,6 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.8/howto/static-files/
 
 STATIC_URL = '/static/'
+
+CONCEPT_INSIGHTS_USER = '252f3e20-0ae7-42c3-a3ae-ee21dc216db6'
+CONCEPT_INSIGHTS_PASSWORD = '5dJHn3GjNxgl'
