@@ -15,6 +15,7 @@
         <form id="todoist">
           <div class="modal-body">
             <h4>Input your account information to create a task list</h4>
+            <p>An error occured, check our name and password and try again.</p>
             <div class="form-modal">
               <input id="todoist-username" type="text" name="username" placeholder="Email">
               <input id="todoist-password" type="password" name="password" placeholder="Password">
@@ -65,6 +66,12 @@ $("#todoist").on('submit', function(event){
       'tags': tags,
     },
     dataType: 'html'
+  })
+  .done(function() {
+    $('#todoist-modal').modal('hide');
+  })
+  .fail(function() {
+    $(".modal-body p").show();
   });
   return false;
 });
