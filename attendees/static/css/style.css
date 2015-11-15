@@ -2,6 +2,9 @@ a {
   color: #F42;
   text-decoration: none; }
 
+ul {
+  list-style: none; }
+
 .main-content {
   padding: 6em 0;
   background-color: #ECECEC;
@@ -16,14 +19,11 @@ a {
     margin-right: 0.6em; }
   .main-content h5 {
     color: #777; }
-  .main-content .label {
-    margin: 0 5px; }
-    .main-content .label ul {
-      list-style: none;
-      margin: 20px 0; }
-      .main-content .label ul li {
-        display: inline-block;
-        margin: 0 6px; }
+  .main-content .label ul {
+    margin: 20px 0; }
+    .main-content .label ul li {
+      display: inline-block;
+      margin: 0 6px; }
   .main-content .commom-labels ul li {
     font-size: 28px; }
   .main-content .random-labels ul li {
@@ -41,6 +41,49 @@ a {
   .tags-form textarea:focus, .tags-form textarea.form-control:focus, .tags-form input.form-control:focus, .tags-form input[type=text]:focus, .tags-form input[type=password]:focus, .tags-form input[type=email]:focus, .tags-form input[type=number]:focus, .tags-form [type=text].form-control:focus, .tags-form [type=password].form-control:focus, .tags-form [type=email].form-control:focus, .tags-form [type=tel].form-control:focus, .tags-form [contenteditable].form-control:focus {
     -webkit-box-shadow: none;
     box-shadow: none; }
+
+.result-box {
+  margin-top: 3em; }
+  .result-box .result-text h5 {
+    border-bottom: solid 2px;
+    padding-bottom: 10px;
+    margin-bottom: 25px; }
+  .result-box ul {
+    display: inline-block;
+    padding-left: 0;
+    font-size: 20px;
+    height: 140px;
+    overflow: hidden; }
+    .result-box ul li {
+      float: left;
+      margin-right: 3px;
+      height: 26px; }
+
+.result-box .media-object {
+  display: block;
+  max-width: 200px; }
+.result-box .media, .result-box .media-body {
+  margin-top: 0;
+  margin-bottom: 3em; }
+.result-box .media-left {
+  padding-right: 2em; }
+.result-box span {
+  display: inline;
+  background-color: #777;
+  padding: .2em .6em .3em;
+  font-size: 60%;
+  font-weight: 700;
+  line-height: 1;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: .25em; }
+.result-box .linkedin {
+  width: 100%;
+  font-size: 18px;
+  padding: 8px 20px;
+  margin: 10px 0; }
 
 footer {
   margin-top: 3em; }
