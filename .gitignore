@@ -7,7 +7,6 @@
 /coverage_html/
 /.env
 /env
-/components/
 /staticfiles/
 /media/
 *.css.map

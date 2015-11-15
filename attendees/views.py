@@ -1,9 +1,12 @@
 from django.views import generic
-from django.db.models import Count
+from django.http import HttpResponse
+from django.db.models import Q, Count
 
 from attendees.models import Concept, Attendee
+from attendees.todoist import export_to_todoist
 
 import json
+import operator
 
 
 class AttendeesView(generic.TemplateView):
@@ -24,6 +27,24 @@ class AttendeesView(generic.TemplateView):
         return data
 
 
+def filter_query(tags):
+    return Attendee.objects.filter(
+        reduce(operator.and_, (Q(concepts__label=t) for t in tags))
+    ).distinct()
+
+
+class SendToTodoistAjaxView(generic.TemplateView):
+
+    def post(self, request, **kwargs):
+        username = request.POST.get('username', '')
+        password = request.POST.get('password', '')
+        tags_str = self.request.GET.get('tags', '')
+        tags = tags_str.split(',')
+        attendees = filter_query(tags)
+        export_to_todoist(username, password, 'TheNextWeb-networking', attendees[20])
+        return HttpResponse()
+
+
 class AttendeesAjaxView(generic.TemplateView):
     template_name = 'attendees/partial.html'
 
@@ -33,6 +54,6 @@ class AttendeesAjaxView(generic.TemplateView):
         if tags_str:
             tags = tags_str.split(',')
             data['tags'] = ','.join(tags)
-            data['results'] = list(Attendee.objects.filter(concepts__label__in=tags).distinct())
+            data['results'] = list(filter_query(tags))
             data['results_len'] = len(data['results'])
         return data
