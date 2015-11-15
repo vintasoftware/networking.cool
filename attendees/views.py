@@ -63,7 +63,13 @@ class AttendeesAjaxView(generic.TemplateView):
         tags_str = self.request.GET.get('tags', '')
         if tags_str:
             tags = tags_str.split(',')
+
+            attendees_full = list(filter_query(tags))
+            attendees = attendees_full
+            if len(attendees) > 50:
+                attendees = attendees[:50]
+
             data['tags'] = ', '.join(tags)
-            data['results'] = list(filter_query(tags))
-            data['results_len'] = len(data['results'])
+            data['results'] = attendees
+            data['results_len'] = len(attendees_full)
         return data
