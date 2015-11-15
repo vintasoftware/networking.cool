@@ -21,11 +21,11 @@ class AttendeesView(generic.TemplateView):
             label__in=['', 'LinkedIn']
         ).values('label').annotate(count=Count('label')).order_by('-count')[:7]
         data['random_labels'] = Concept.objects.values('label').random(7)
-        all_labels = Concept.objects.values_list('label', flat=True).distinct()
-        data['all_labels_select2_data'] = json.dumps([{
-            'id': l,
-            'text': l
-        } for l in all_labels])
+        # all_labels = Concept.objects.values_list('label', flat=True).distinct()
+        # data['all_labels_select2_data'] = json.dumps([{
+        #     'id': l,
+        #     'text': l
+        # } for l in all_labels])
         Concept.objects.values('label').annotate(count=Count('label'))
         return data
 
