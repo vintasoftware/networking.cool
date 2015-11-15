@@ -93,6 +93,21 @@ ul {
     .result-box .linkedin {
       margin-top: -15px; } }
 
+.modal-dialog h4 {
+  text-align: center;
+  margin: 0; }
+.modal-dialog img {
+  width: 160px; }
+.modal-dialog .form-modal {
+  margin-top: 1em;
+  margin-bottom: 1em; }
+  .modal-dialog .form-modal input {
+    width: 100%;
+    padding: 22px 20px; }
+    .modal-dialog .form-modal input:focus {
+      -webkit-box-shadow: none !important;
+      box-shadow: none !important; }
+
 .result-box .media-object {
   display: block;
   width: 200px; }
