@@ -15,7 +15,7 @@ class Attendee(models.Model):
 
 
 class Concept(models.Model):
-    attendee = models.ForeignKey(Attendee)
+    attendee = models.ForeignKey(Attendee, related_name='concepts')
 
     label = models.CharField(max_length=255)
     score = models.DecimalField(max_digits=10, decimal_places=9)
