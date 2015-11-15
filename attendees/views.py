@@ -31,13 +31,9 @@ class AttendeesView(generic.TemplateView):
 
 
 def filter_query(tags):
-    # concepts = Concept.objects.filter(label__in=tags).annotate(count=Count('attendee'))
-    # print concepts[0].count
-    return Attendee.objects.filter(concepts__label__in=tags).annotate(count=Count('concepts')).filter(count=len(tags))
-
     return Attendee.objects.filter(
-        reduce(operator.and_, (Q(concepts__label=t) for t in tags))
-    ).distinct()
+        concepts__label__in=tags).annotate(
+        count=Count('concepts')).filter(count=len(tags))
 
 
 class SendToTodoistAjaxView(generic.TemplateView):
