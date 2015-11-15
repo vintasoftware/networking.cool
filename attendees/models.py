@@ -4,6 +4,8 @@ from django.db import models
 class Attendee(models.Model):
 
     name = models.CharField(max_length=255)
+    picture = models.TextField(blank=True)
+    company = models.CharField(max_length=255, blank=True)
     description = models.TextField(blank=True)
 
     linkedin_profile = models.TextField(blank=True)
