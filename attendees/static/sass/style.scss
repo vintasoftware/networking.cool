@@ -163,6 +163,21 @@ ul {
   img {
     width: 160px;
   }
+
+  .form-modal {
+    margin-top: 1em;
+    margin-bottom: 1em;
+
+    input {
+      width: 100%;
+      padding: 22px 20px;
+
+      &:focus {
+        -webkit-box-shadow: none!important;
+        box-shadow: none!important;
+      }
+    }
+  }
 }
 
 .result-box {
