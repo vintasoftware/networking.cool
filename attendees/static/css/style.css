@@ -44,10 +44,25 @@ ul {
 
 .result-box {
   margin-top: 3em; }
-  .result-box .result-text h5 {
+  .result-box .button-todoist {
+    display: inline-block;
+    padding: 10px 16px;
+    color: white;
+    background-color: #db4c3f;
+    border-radius: 3px;
+    -webkit-transition: background-color .2s ease-in;
+    transition: background-color .2s ease-in;
+    cursor: pointer;
+    font-size: 15px; }
+    .result-box .button-todoist:hover {
+      text-decoration: none;
+      background-color: #c33224; }
+  .result-box .result-text {
+    display: inline-block;
+    width: 100%;
     border-bottom: solid 2px;
-    padding-bottom: 10px;
-    margin-bottom: 25px; }
+    padding-bottom: 12px;
+    margin-bottom: 22px; }
   .result-box ul {
     display: inline-block;
     padding-left: 0;

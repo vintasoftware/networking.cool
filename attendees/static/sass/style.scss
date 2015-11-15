@@ -82,12 +82,29 @@ ul {
 .result-box  {
   margin-top: 3em;
 
-  .result-text {
-    h5 {
-      border-bottom: solid 2px;
-      padding-bottom: 10px;
-      margin-bottom: 25px;
+  .button-todoist {
+    display: inline-block;
+    padding: 10px 16px;
+    color: white;
+    background-color: #db4c3f;
+    border-radius: 3px;
+    -webkit-transition: background-color .2s ease-in;
+    transition: background-color .2s ease-in;
+    cursor: pointer;
+    font-size: 15px;
+
+    &:hover {
+      text-decoration: none;
+      background-color: #c33224;
     }
+  }
+
+  .result-text {
+    display: inline-block;
+    width: 100%;
+    border-bottom: solid 2px;
+    padding-bottom: 12px;
+    margin-bottom: 22px;
   }
 
   ul {

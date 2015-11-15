@@ -5,6 +5,7 @@ cryptography==1.1
 decorator==4.0.4
 Django==1.8.6
 django-bower==5.0.2
+django-random-queryset==0.0.3
 enum34==1.0.4
 gnureadline==6.3.3
 gunicorn==19.3.0
