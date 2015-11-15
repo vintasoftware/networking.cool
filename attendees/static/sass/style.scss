@@ -64,6 +64,9 @@ ul {
   }
 }
 
+.btn-danger {
+  background-color: #FF4422;
+}
 
 .tags-form {
     margin-top: 3em;
@@ -236,16 +239,22 @@ ul {
 }
 
 .select2-selection__choice {
-  background-color: #E76569 !important;
-  color: #fff;
-  font-size: 14px;
-  padding: 5px 10px!important;
+  display: inline;
+  padding: .3em .6em .4em !important;
+  font-size: 130%;
+  font-weight: bold;
+  line-height: 1;
+  color: #ffffff;
+  text-align: center;
+  white-space: nowrap;
   border: none!important;
+  text-transform: uppercase;
+  background-color: #FF4422 !important;
 }
 
 .select2-selection__choice__remove {
   color: #fff!important;
-  font-size: 14px;
+  font-size: 16px;
   padding-right: 4px;
 }
 
