@@ -86,6 +86,7 @@ STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
 # Bower
 
 BOWER_INSTALLED_APPS = [
+    'select2#4.0.1-rc.1',
     'font-awesome#4.2.0',
     'bootstrap#3.3.4',
 ]

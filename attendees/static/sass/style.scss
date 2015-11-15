@@ -1,3 +1,6 @@
+//Style
+$screen-mobile: "(max-width: 545px)";
+
 a {
     color: #F42;
     text-decoration: none;
@@ -65,18 +68,18 @@ ul {
 .tags-form {
     margin-top: 3em;
 
-    input {
+    input, select {
       background-color: #fff!important;
       padding: 1.5em 1em!important;
       font-size: 28px !important;
       box-shadow: none !important;
     }
 
-    textarea, textarea.form-control, input.form-control, input[type=text], input[type=password], input[type=email], input[type=number], [type=text].form-control, [type=password].form-control, [type=email].form-control, [type=tel].form-control, [contenteditable].form-control {
+    select, textarea, textarea.form-control, input.form-control, input[type=text], input[type=password], input[type=email], input[type=number], [type=text].form-control, [type=password].form-control, [type=email].form-control, [type=tel].form-control, [contenteditable].form-control {
       border-bottom: 8px solid #f42;
     }
 
-    textarea:focus, textarea.form-control:focus, input.form-control:focus, input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, input[type=number]:focus, [type=text].form-control:focus, [type=password].form-control:focus, [type=email].form-control:focus, [type=tel].form-control:focus, [contenteditable].form-control:focus {
+    select, textarea:focus, textarea.form-control:focus, input.form-control:focus, input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, input[type=number]:focus, [type=text].form-control:focus, [type=password].form-control:focus, [type=email].form-control:focus, [type=tel].form-control:focus, [contenteditable].form-control:focus {
         -webkit-box-shadow: none;
         box-shadow: none;
     }
@@ -123,18 +126,41 @@ ul {
       height: 26px;
     }
   }
+  @media #{$screen-mobile} {
+    .media-left {
+      width: 100%;
+      display: inline-block;
+      padding: 0;
+    }
+
+    img {
+      margin: auto;
+      margin-bottom: 25px;
+    }
+
+    .button-todoist {
+      width: 100%;
+      text-align: center;
+      margin: 0.5em 0;
+    }
+
+    .linkedin {
+      margin-top: -15px;
+    }
+  }
 }
 
 
 .result-box {
   .media-object {
     display: block;
-    max-width: 200px;
+    width: 200px;
   }
 
   .media, .media-body {
     margin-top: 0;
     margin-bottom: 3em;
+    height: 310px;
   }
 
   .media-left {
