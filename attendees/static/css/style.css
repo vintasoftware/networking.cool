@@ -19,11 +19,14 @@ ul {
     margin-right: 0.6em; }
   .main-content h5 {
     color: #777; }
-  .main-content .label ul {
-    margin: 20px 0; }
-    .main-content .label ul li {
-      display: inline-block;
-      margin: 0 6px; }
+  .main-content .label {
+    white-space: normal; }
+    .main-content .label ul {
+      margin: 20px 0; }
+      .main-content .label ul li {
+        display: inline-block;
+        margin: 0 4px;
+        margin-bottom: 20px; }
   .main-content .common-labels ul li {
     font-size: 28px; }
   .main-content .random-labels ul li {

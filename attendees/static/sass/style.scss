@@ -31,12 +31,15 @@ ul {
   }
 
   .label {
+    white-space: normal;
+
     ul {
       margin: 20px 0;
 
       li {
         display: inline-block;
-        margin: 0 6px;
+        margin: 0 4px;
+        margin-bottom: 20px;
       }
     }
   }
