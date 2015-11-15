@@ -21,12 +21,6 @@ class AttendeesView(generic.TemplateView):
             label__in=['', 'LinkedIn']
         ).values('label').annotate(count=Count('label')).order_by('-count')[:7]
         data['random_labels'] = Concept.objects.values('label').random(7)
-        # all_labels = Concept.objects.values_list('label', flat=True).distinct()
-        # data['all_labels_select2_data'] = json.dumps([{
-        #     'id': l,
-        #     'text': l
-        # } for l in all_labels])
-        Concept.objects.values('label').annotate(count=Count('label'))
         return data
 
 
@@ -66,8 +60,8 @@ class AttendeesAjaxView(generic.TemplateView):
 
             attendees_full = list(filter_query(tags))
             attendees = attendees_full
-            if len(attendees) > 50:
-                attendees = attendees[:50]
+            if len(attendees) > 30:
+                attendees = attendees[:30]
 
             data['tags'] = ', '.join(tags)
             data['results'] = attendees
