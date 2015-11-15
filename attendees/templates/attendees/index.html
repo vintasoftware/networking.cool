@@ -16,7 +16,7 @@
           <h5>Most common concepts:</h5>
           <ul>
             {% for l in top_labels %}
-              <li><a href="#" class="btn btn-danger disabled label">{{ l.label }}</a></li>
+              <li><a href="#" class="btn btn-danger label clickable-tag">{{ l.label }}</a></li>
             {% endfor %}
           </ul>
         </div>
@@ -24,7 +24,7 @@
           <h5>Random concepts:</h5>
           <ul>
             {% for l in random_labels %}
-              <li><a href="#" class="btn btn-danger disabled label">{{ l.label }}</a></li>
+              <li><a href="#" class="btn btn-danger label clickable-tag">{{ l.label }}</a></li>
             {% endfor %}
           </ul>
         </div>
@@ -60,6 +60,20 @@
       }).success(function (html) {
         $('.result-box').html(html);
       });
+    });
+
+    $('.clickable-tag').on('click', function () {
+      var tag = $(this).text();
+      var selectedTags = $('#focusedInput').val() || [];
+      if (selectedTags.indexOf(tag) === -1) {
+        $('<option></option>').
+         attr('selected', true).
+         text(tag).
+         val(tag).
+         appendTo($('#focusedInput'));
+         $('#focusedInput').trigger('change');
+      }
+      return false;
     });
 
     $("#todoist").submit(function(event){
