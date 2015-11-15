@@ -9,8 +9,7 @@ class AttendeeAdmin(admin.ModelAdmin):
 
 class ConceptAdmin(admin.ModelAdmin):
     list_display = ('label', 'attendee', 'score',)
-    list_filter = ('label', 'attendee',)
-
+    list_filter = ('attendee',)
 
 
 admin.site.register(Attendee, AttendeeAdmin)

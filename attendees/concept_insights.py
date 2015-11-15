@@ -18,9 +18,12 @@ cli = ConceptInsights(
     password=settings.CONCEPT_INSIGHTS_PASSWORD)
 
 
-def fetch_concepts(attendee):
+def fetch_concepts(attendee, html=''):
+    if not html:
+        html = attendee.description
+
     response = cli.annotate_text(
-        account_id=ACCOUNT_ID, graph=GRAPH).post(data=attendee.description)
+        account_id=ACCOUNT_ID, graph=GRAPH).post(data=html)
 
     annotations = response.annotations
     concepts_set = set()
