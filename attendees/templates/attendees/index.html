@@ -13,7 +13,7 @@
           <select multiple="multiple" class="form-control" id="focusedInput" placeholder="You want to meet people related to..."></select>
         </div>
         <div class="label common-labels">
-          <h5>Most common concepts:</h5>
+          <h5>Common attributes:</h5>
           <ul>
             {% for l in top_labels %}
               <li><a href="#" class="btn btn-danger label clickable-tag">{{ l.label }}</a></li>
@@ -21,7 +21,7 @@
           </ul>
         </div>
         <div class="label random-labels">
-          <h5>Random concepts:</h5>
+          <h5>Random attributes:</h5>
           <ul>
             {% for l in random_labels %}
               <li><a href="#" class="btn btn-danger label clickable-tag">{{ l.label }}</a></li>
