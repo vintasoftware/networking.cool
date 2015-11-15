@@ -3,11 +3,13 @@ from django.http import HttpResponse
 from django.db.models import Count
 from django.utils.decorators import method_decorator
 from django.views.decorators.csrf import csrf_exempt
+from django.db.models import Q, Count
 
 from attendees.models import Concept, Attendee
 from attendees.todoist import export_to_todoist
 
 import json
+import operator
 
 
 class AttendeesView(generic.TemplateView):
@@ -29,7 +31,9 @@ class AttendeesView(generic.TemplateView):
 
 
 def filter_query(tags):
-    return Attendee.objects.filter(concepts__label__in=tags).distinct()
+    return Attendee.objects.filter(
+        reduce(operator.and_, (Q(concepts__label=t) for t in tags))
+    ).distinct()
 
 
 class SendToTodoistAjaxView(generic.TemplateView):
