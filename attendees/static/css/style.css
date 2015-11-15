@@ -66,6 +66,8 @@ ul {
     border-bottom: solid 2px;
     padding-bottom: 12px;
     margin-bottom: 22px; }
+    .result-box .result-text h5 {
+      display: inline-block; }
   .result-box ul {
     display: inline-block;
     padding-left: 0;
