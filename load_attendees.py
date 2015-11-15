@@ -17,5 +17,8 @@ for attendee in attendees:
 
         print 'created: ' + attendee_instance.name
 
-        fetch_concepts(attendee_instance, html=attendee['html'])
+        concepts = attendee_instance.concepts.all()
+
+        if len(concepts) < 40:
+            fetch_concepts(attendee_instance, html=attendee['html'])
 
