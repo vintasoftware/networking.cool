@@ -38,6 +38,7 @@ ul {
 .tags-form {
   margin-top: 3em; }
   .tags-form input, .tags-form select {
+    min-width: 3.75em;
     background-color: #fff !important;
     padding: 1.5em 1em !important;
     font-size: 28px !important;
@@ -141,19 +142,25 @@ ul {
   margin: 10px 0; }
 
 .select2-selection {
-  height: 92px !important;
+  min-height: 92px !important;
   border: none !important;
   border-radius: 0 !important;
   border-bottom: 8px solid #ff4422 !important; }
 
 .select2-search__field, .select2-search {
-  height: 80px; }
+  height: 60px;
+  float: none !important; }
+
+.select2-selection__rendered {
+  text-align: left;
+  white-space: normal !important; }
 
 .select2-search__field {
   margin-top: 1px !important; }
 
 .select2-selection__choice {
-  display: inline;
+  display: inline-block;
+  float: none !important;
   padding: .3em .6em .4em !important;
   font-size: 130%;
   font-weight: bold;
