@@ -1,13 +1,18 @@
+a {
+    color: #F42;
+    text-decoration: none;
+}
+
 .main-content {
   padding: 6em 0;
-  background-color: #325c80;
+  background-color: #ECECEC;
   text-align: center;
 
   h1, h4 {
-    color: #fff;
+    color: #777;
 
     span {
-      color: #ff9800;
+      color: #F42;
     }
   }
 
@@ -18,11 +23,11 @@
   }
 
   h5 {
-    color: #fff;
+    color: #777;
   }
 
   .label {
-    margin: 0 10px;
+    margin: 0 5px;
 
     ul {
       list-style: none;
@@ -33,6 +38,10 @@
         margin: 0 6px;
       }
     }
+  }
+
+  .label-default {
+    // background-color: rgba(255, 68, 34, 0.68);
   }
 
   .commom-labels {
@@ -60,11 +69,16 @@
       background-color: #fff!important;
       padding: 1.5em 1em!important;
       font-size: 28px !important;
+      box-shadow: none !important;
+    }
+
+    textarea, textarea.form-control, input.form-control, input[type=text], input[type=password], input[type=email], input[type=number], [type=text].form-control, [type=password].form-control, [type=email].form-control, [type=tel].form-control, [contenteditable].form-control {
+      border-bottom: 8px solid #f42;
     }
 
     textarea:focus, textarea.form-control:focus, input.form-control:focus, input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, input[type=number]:focus, [type=text].form-control:focus, [type=password].form-control:focus, [type=email].form-control:focus, [type=tel].form-control:focus, [contenteditable].form-control:focus {
-        -webkit-box-shadow: inset 0 -6px 0 #ff9800;
-        box-shadow: inset 0 -6px 0 #ff9800;
+        -webkit-box-shadow: none;
+        box-shadow: none;
     }
 }
 
